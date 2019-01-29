@@ -1,0 +1,194 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/*
+Credit: http://www.templatemo.com
+*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+    color: #666;
+    font-family: Helevetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height:1.5em;
+    background-image: url(asset-path('body.jpg'));
+    background-repeat: repeat;
+}
+
+a, a:link, a:visited {
+    color: #CC0000;
+}
+
+a:hover {
+    color: #666666;
+    text-decoration: none;
+}
+
+p { margin: 0px; padding: 0 0 10px 0; }
+img { border: none; }
+
+h1 { font-size: 40px; font-weight: bold; margin: 0 0 30px 0; padding: 5px 0; color: #000; }
+h2 { font-size: 28px; font-weight: normal; line-height: 28px; margin: 0 0 30px 0; padding: 0; color: #c7a902; }
+h3 { font-size: 21px; margin: 0 0 20px 0; padding: 0; padding: 0; color: #666666; }
+h4 { font-size: 18px; margin: 0 0 20px 0; padding: 0; color: #ffa200; }
+h5 { font-size: 16px; margin: 0 0 10px 0; padding: 0; color: #ffa200;}
+h6 { font-size: 14px; margin: 0 0 5px 0; padding: 0; color: #ffa200;}
+
+.cleaner { clear: both; width: 100%; height: 0px; font-size: 0px;  }
+.cleaner_h10 { clear: both; width:100%; height: 10px; }
+.cleaner_h20 { clear: both; width:100%; height: 20px; }
+.cleaner_h30 { clear: both; width:100%; height: 30px; }
+.cleaner_h40 { clear: both; width:100%; height: 40px; }
+.cleaner_h50 { clear: both; width:100%; height: 50px; }
+.cleaner_h60 { clear: both; width:100%; height: 60px; }
+
+.margin_r30 { margin-right: 30px; }
+
+.vertical_divider { border-right: 1px solid #d9d9d9; }
+.horizon_divider {  border-bottom: 1px solid #d9d9d9; }
+
+blockquote { font-style: italic; margin-left: 10px;}
+cite { font-weight: bold; }
+cite span { color: #8da332; }
+em { color: #5d6d1e; }
+
+.list {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list li {
+    background: transparent url(asset-path('list.png')) no-repeat scroll 0 0px;
+    margin:0 0 20px;
+    padding:0 0 0 25px;
+    line-height: 1em;
+}
+
+.list li a {
+    color: #666;
+    text-decoration: none;
+}
+
+.list li a:hover {
+    color: #000;
+}
+
+.button a {
+    clear: both;
+    display: block;
+    width: 82px;
+    height: 23px;
+    padding: 3px 0 0 0;
+    margin-top: 15px;
+    background: url(asset-path('button.png')) no-repeat;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button a:hover {
+    color: #fff;
+    background: url(asset-path('button_hover.png')) no-repeat;
+}
+
+#wrapper {
+    width: 970px;
+    padding: 0;
+    margin: 0 auto;
+    background: url(asset-path('wrapper.png')) repeat-y;
+}
+
+/* menu */
+
+#menu {
+     width: 830px;
+     height: 50px;
+     margin: 0 10px 0 100px;
+     padding: 20px 30px 0 0;
+     background: image-url("menu.png") top repeat-x;
+ }
+
+#menu ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+#menu ul li {
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+}
+
+#menu ul li a {
+    float: left;
+    display: block;
+    width: 112px;
+    height: 48px;
+    padding: 0;
+    margin: 0 5px 0 0 ;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: #e4decd;
+    font-weight: bold;
+    outline: none;
+    border: none;
+}
+
+#menu ul li a:hover, #menu ul li .current {
+    height: 38px;
+    padding-top: 10px;
+    color: #fff;
+    background: image-url("menu_hover.png") bottom no-repeat;
+}
+
+/* end of menu */
+
+#left_column {
+    float: left;
+    width: 400px;
+}
+
+#sidebar {
+    clear: both;
+    float: left;
+    width: 250px;
+    margin-left: 130px;
+}
+
+/* footer */
+
+#footer {
+  width: 830px;
+  height: 50px;
+  margin: 0 10px 0 100px;
+  padding: 20px 30px 0 0;
+  text-align: center;
+  color: #FFFFFF;
+  background: image-url("footer.png") bottom repeat-x;
+}
+
+#footer a {
+    color: #FFFFFF;
+}
+
+/* footer wrapper */
