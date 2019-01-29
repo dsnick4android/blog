@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 2019_01_28_211602) do
     t.index ["name"], name: "index_users_on_name", unique: true
   end
 
-  add_foreign_key "comments", "posts", on_delete: :cascade
-  add_foreign_key "comments", "users", on_delete: :cascade
-  add_foreign_key "posts", "users", on_delete: :cascade
+  add_foreign_key "comments", "posts"
+  add_foreign_key "comments", "users"
+  add_foreign_key "posts", "users"
 end
