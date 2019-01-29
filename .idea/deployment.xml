@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="blog" uploadOnCheckin="4bbe0fc8-b733-4701-92fa-f9d662c1e80d" compareModeInSync="TIMESTAMP">
+  <component name="PublishConfigData" serverName="blog">
     <serverData>
       <paths name="blog">
         <serverdata>
@@ -13,6 +13,5 @@
         </serverdata>
       </paths>
     </serverData>
-    <option name="myUploadOnCheckinName" value="blog" />
   </component>
 </project>
