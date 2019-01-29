@@ -11,12 +11,53 @@
 
   <body>
 
-  <a href='/'> Home </a>&nbsp;
-  <a href='/about/me'> About </a>
-  <!-- тут должна быть шапка, но не успел -->
+  <!--<a href='/'> Home </a>&nbsp;-->
+  <!--<a href='/home/about'> About </a>-->
 
-  <%= yield %>
+  <div id="wrapper">
 
-  <!-- тут должен быть футер, но не успел -->
+    <div id="menu">
+
+      <ul>
+        <!--class="current"-->
+        <li><a href="../">Blog</a></li>
+        <li><a href="../home/portfolio">Portfolio</a></li>
+        <li><a href="../home/about">About Me</a></li>
+        <li><a href="../home/contact">Contact</a></li>
+      </ul>
+
+    </div> <!-- end of menu -->
+
+    <div id="left_column">
+
+      <div id="sidebar">
+
+        <h4>Categories</h4>
+        <ul class="list">
+          <li><a href="#" target="_parent">First cat</a></li>
+          <li><a href="#" target="_parent">Second cat</a></li>
+          <li><a href="#" target="_parent">Third cat</a></li>
+          <li><a href="#" target="_parent">Fourth cat</a></li>
+          <li><a href="#">Five cat</a></li>
+          <li><a href="#">Six cat</a></li>
+        </ul>
+
+        <div class="cleaner_h40"></div>
+
+      </div> <!-- end of sidebar -->
+    </div> <!-- end of left_column -->
+
+    <%= yield %>
+
+    <div class="cleaner_h20"></div>
+
+    <div id="footer">
+      Copyright © 2019 <a href="#">GeekBrains course</a> |
+      <a href="#" target="_parent">Blog</a> by DSNick</a>
+    </div>
+    <div class="cleaner"></div>
+    </div> <!-- end of warpper -->
+
+
   </body>
 </html>
