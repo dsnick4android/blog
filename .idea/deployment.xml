@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="blog">
+  <component name="PublishConfigData" serverName="blog" uploadOnCheckin="4bbe0fc8-b733-4701-92fa-f9d662c1e80d">
     <serverData>
       <paths name="blog">
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
+          <excludedPaths>
+            <excludedPath path="/log" />
+          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>
+    <option name="myUploadOnCheckinName" value="blog" />
   </component>
 </project>
