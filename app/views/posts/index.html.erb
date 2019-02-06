@@ -1,0 +1,14 @@
+
+    <% @posts.each do |post| %>
+        <div class="post_section">
+          <h2><%= link_to post.title, post %></h2>
+          <%= post.created_at.strftime("%A, %d %B %Y %H:%M:%S") %> |
+          <strong>Author:</strong> <%= post.user.name %><br><br>
+          <!--<img src="images/image_01.jpg" alt="image 1" />-->
+          <p><%= post.body.split.slice(0,30).join(" ") %> <br> <%= link_to 'Continue reading...', post %> </p>
+        </div>
+    <% end %>
+
+
+    <%= link_to 'New Post', new_post_path %>
+    <%= paginate @posts %>
