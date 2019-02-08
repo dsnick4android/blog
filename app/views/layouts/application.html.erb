@@ -24,6 +24,16 @@
         <li><a href="../home/portfolio">Portfolio</a></li>
         <li><a href="../home/about">About Me</a></li>
         <li><a href="../home/contact">Contact</a></li>
+        <% if user_signed_in? %>
+            <li>
+              <%= link_to(destroy_user_session_path, method: :delete) do %>
+              <%= "#{t('label.log_out')}[#{current_user.name}]" %>
+              <% end  %>
+            </li>
+        <% else %>
+            <li><%= link_to "#{t('label.log_in')}", new_user_session_path %></li>
+            <li><%= link_to "#{t('label.registration')}", new_user_registration_path %></li>
+        <% end %>
       </ul>
 
     </div> <!-- end of menu -->
@@ -47,7 +57,16 @@
       </div> <!-- end of sidebar -->
     </div> <!-- end of left_column -->
 
-    <%= yield %>
+    <div id="right_column">
+      <div id="main">
+
+      <%= yield %>
+
+      </div>
+
+      <div class="cleaner"></div>
+    </div>
+    <!-- end of main -->
 
     <div class="cleaner_h20"></div>
 

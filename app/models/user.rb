@@ -1,6 +1,10 @@
 class User < ApplicationRecord
-  has_many :posts, depentent: :destroy
-  has_many :comments, depentent: :destroy
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable
+  has_many :posts, dependent: :destroy
+  has_many :comments, dependent: :destroy
   has_many :commented_posts, through: :comments, source: :commentable, source_type: :Post
   has_many :commented_users, through: :comments, source: :commentable, source_type: :User
 
