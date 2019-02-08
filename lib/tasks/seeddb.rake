@@ -13,13 +13,16 @@ namespace :seeddb do
     Post.delete_all
     Post.create!(post_data)
 
-    # comment_data = [{body: "comment text text", user: User.all.sample, post: Post.all.sample},
-    #                 {body: "comment text text", user: User.all.sample, post: Post.all.sample},
-    #                 {body: "comment text text", user: User.all.sample, post: Post.all.sample}]
-    # Comment.delete_all
-    # Comment.create!(comment_data)
+    comment_data = [{body: "comment text text", user: User.all.sample, post: Post.all.sample},
+                    {body: "comment text text", user: User.all.sample, post: Post.all.sample},
+                    {body: "comment text text", user: User.all.sample, post: Post.all.sample}]
+    Comment.delete_all
+    Comment.create!(comment_data)
     # С комментариями не справился, тут выдает ошибку, почему так и не понял... *(где там он нашел метод text?)
     # rake aborted!
     # NoMethodError: undefined method `text' for #<Comment:0x00007fbfbc00d880>
+    # ==============
+    # upd 30.01.2019
+    # Нашел ошибку, исправил..
   end
 end
