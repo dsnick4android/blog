@@ -1,26 +1,3 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-
-/*
-Credit: http://www.templatemo.com
-*/
-
-@import "bootstrap-sprockets";
-@import 'bootstrap';
-
 body {
     margin: 0px;
     padding: 0px;
@@ -111,7 +88,7 @@ em { color: #5d6d1e; }
 }
 
 #wrapper {
-    width: 930px;
+    width: 970px;
     padding: 0;
     margin: 0 auto;
     background: url(asset-path('wrapper.png')) repeat-y;
@@ -120,12 +97,12 @@ em { color: #5d6d1e; }
 /* menu */
 
 #menu {
-     width: 830px;
-     height: 50px;
-     margin: 0 10px 0 100px;
-     padding: 20px 30px 0 0;
-     background: image-url("menu.png") top repeat-x;
- }
+    width: 830px;
+    height: 50px;
+    margin: 0 10px 0 100px;
+    padding: 20px 30px 0 0;
+    background: image-url("menu.png") top repeat-x;
+}
 
 #menu ul {
     float: right;
@@ -181,13 +158,13 @@ em { color: #5d6d1e; }
 /* footer */
 
 #footer {
-  width: 830px;
-  height: 50px;
-  margin: 0 10px 0 100px;
-  padding: 20px 30px 0 0;
-  text-align: center;
-  color: #FFFFFF;
-  background: image-url("footer.png") bottom repeat-x;
+    width: 830px;
+    height: 50px;
+    margin: 0 10px 0 100px;
+    padding: 20px 30px 0 0;
+    text-align: center;
+    color: #FFFFFF;
+    background: image-url(../img/footer.png) bottom repeat-x;
 }
 
 #footer a {
@@ -195,3 +172,67 @@ em { color: #5d6d1e; }
 }
 
 /* footer wrapper */
+
+#right_column {
+    float: right;
+    width: 520px;
+    margin-right: 10px;
+}
+
+.post_section {
+    clear: both;
+    position: relative;
+    padding: 0 60px 10px 0;
+    margin: 40px 0;
+    background: image-url("post_bottom.png") bottom left no-repeat;
+}
+
+.post_section h2 {
+    margin: 0;
+    padding: 10px 0 10px 0;
+    line-height: 30px;
+}
+
+.post_section p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.post_section img {
+    clear: both;
+    display: block;
+    margin: 20px 0;
+}
+
+.post_section .comment {
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    width: 70px;
+    height: 42px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background: image-url("comment.png") no-repeat;
+}
+
+.post_section .comment a {
+    color: #333;
+    text-decoration: none;
+}
+
+.post_section .comment_tab {
+    padding: 10px 0;
+    margin: 40px 0 20px 0;
+    border-bottom: 1px dashed #666;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#main {
+    float: right;
+    width: 490px;
+    padding-top: 40px;
+    margin-right: 30px;
+}

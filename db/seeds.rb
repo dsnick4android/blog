@@ -12,8 +12,10 @@ User.destroy_all
 
 hash_users = 50.times.map do
   {
+      email = FFaker::Internet.safe_email
       name: FFaker::Internet.user_name,
-      email: FFaker::Internet.safe_email
+      email: email,
+      password: email
   }
 end
 
