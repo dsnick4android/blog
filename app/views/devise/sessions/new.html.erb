@@ -4,6 +4,13 @@
   <div class="field">
     <%= f.label :email, :class => 'sr-only' %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => 'form-control' %>
+<h2>Log in</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+
   </div>
 
   <div class="field">
@@ -19,7 +26,9 @@
   <% end %>
 
   <div class="actions">
+
     <%= f.submit "Log in", :class => 'btn btn-md btn-primary' %>
+
   </div>
 <% end %>
 
