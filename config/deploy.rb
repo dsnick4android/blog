@@ -2,20 +2,20 @@
 lock "~> 3.11.0"
 
 set :application, "blog"
-set :repo_url, "git@github.com:dsnick4android/blog.git"
+set :repo_url, "https://github.com/dsnick4android/blog.git"
 
-server 'proftime.edu.ru', roles: %w(app db)
+server '192.168.17.160', roles: %w(app db)
 set :ssh_options, user: 'dsnick'
 set(:branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call)
 set(:branch, ENV['BRANCH']) if ENV['BRANCH']
-set :deploy_to, '/var/www/blog' # => production
+set :deploy_to, '/home/dsnick/www/blog' # => production
 set :bundle_jobs, 4
 set :format, :pretty
 set :log_level, :debug
 set :pty, true
 append :linked_dirs, 'log', 'tmp/pids', 'sockets', 'public/static'
 set :rvm_type, :user
-set :rvm_ruby_version, '2.3.1'
+set :rvm_ruby_version, '2.4.5'
 set :default_env, rails_env: fetch(:stage)
 
 
